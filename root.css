@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #007bff;
+  --large-font-size: 18px;
+  --default-font-size: 16px;
+  --default-padding: 5px 16px 5px 16px;
+  --default-margin: 8px;
+}
+
+.input {
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+  font-size: var(--default-font-size);
+  outline: none;
+}
+.input.focused {
+  background-color: #cdcdcd;
+}
+.input.typing {
+  box-shadow: -1px 31px 16px -9px rgba(78, 73, 73, 0.7);
+}
+
+.input.large {
+  font-size: var(--large-font-size);
+}
+
+.button {
+  padding: var(--default-padding);
+  /* margin: var(--default-margin); */
+  position: relative;
+  font-size: var(--default-font-size);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: var(--primary-color);
+}
+
+.button.loading {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.button.loading {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background-color: #40a9ff;
+}
+
+.button:active {
+  background-color: gray;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
